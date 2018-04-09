@@ -24,24 +24,24 @@ var smtpTransport = nodemailer.createTransport({
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Nusanet Pekanbaru - Internet Solution Provider' });
+  res.render('index', { title: 'Nusanet Bandung - Internet Solution Provider' });
 });
 
 
 // Get about
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About - Nusanet Pekanbaru' });
+  res.render('about', { title: 'About - Nusanet Bandung' });
 });
 
 
 // Get about
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact - Nusanet Pekanbaru' });
+  res.render('contact', { title: 'Contact - Nusanet Bandung' });
 });
 
 // Get about
 router.get('/support', function(req, res, next) {
-  res.render('support', { title: 'Support - Nusanet Pekanbaru' });
+  res.render('support', { title: 'Support - Nusanet Bandung' });
 });
 
 // Add Submit POST Route
@@ -87,72 +87,72 @@ router.post('/support', function(req, res){
 
 /* GET Retail Business Wireless. */
 router.get('/careers', function(req, res, next) {
-  res.render('careers', { title: 'Careers - Nusanet Pekanbaru' });
+  res.render('careers', { title: 'Careers - Nusanet Bandung' });
 });
 
 /* GET Register2. */
 router.get('/register-coverage-area', function(req, res, next) {
-  res.render('register-coveragearea', { title: 'Register - Nusanet Pekanbaru' });
+  res.render('register-coveragearea', { title: 'Register - Nusanet Bandung' });
 });
 
 /* GET Register2. */
 router.get('/register-customer-data', function(req, res, next) {
-  res.render('register-customerdata', { title: 'Register - Nusanet Pekanbaru' });
+  res.render('register-customerdata', { title: 'Register - Nusanet Bandung' });
 });
 
 /* GET Register2. */
 router.get('/register-summary', function(req, res, next) {
-  res.render('register-summary', { title: 'Register - Nusanet Pekanbaru' });
+  res.render('register-summary', { title: 'Register - Nusanet Bandung' });
 });
 
 /* GET Register2. */
 router.get('/register-notcovered', function(req, res, next) {
-  res.render('register-notcovered', { title: 'Register - Nusanet Pekanbaru' });
+  res.render('register-notcovered', { title: 'Register - Nusanet Bandung' });
 });
 
 /* GET Retail Business Fiber. 
 router.get('/broadband-fiber-optic', function(req, res, next) {
-  res.render('broadband-fiber-optic', { title: 'Broadband Fiber Optic - Nusanet Pekanbaru' });
+  res.render('broadband-fiber-optic', { title: 'Broadband Fiber Optic - Nusanet Bandung' });
 });
 
 
  GET Broadband fiber registration page.
 router.get('/broadband-fiber-optic/registration/:package', function(req, res, next) {
-    res.render('register-broadband-fiber-optic', { title: 'Registration - Nusanet Pekanbaru', selectpackage: req.params.package });
+    res.render('register-broadband-fiber-optic', { title: 'Registration - Nusanet Bandung', selectpackage: req.params.package });
 }); */
 
 /* GET Retail Business Wireless. */
 router.get('/broadband-wireless', function(req, res, next) {
-  res.render('broadband-wireless', { title: 'Broadband Wireless - Nusanet Pekanbaru' });
+  res.render('broadband-wireless', { title: 'Broadband Wireless - Nusanet Bandung' });
 });
 /* GET Retail Business Wireless Registration. */
 router.get('/broadband-wireless/registration/:package', function(req, res, next) {
-  res.render('register-corporate', { title: 'Registration - Nusanet Pekanbaru', selectpackage: req.params.package });
+  res.render('register-corporate', { title: 'Registration - Nusanet Bandung', selectpackage: req.params.package });
 });
 
 /* GET Corporate Radio Wireless. */
 router.get('/corporate-wireless', function(req, res, next) {
-  res.render('corporate-wireless', { title: 'Corporate Radio Wireless - Nusanet Pekanbaru' });
+  res.render('corporate-wireless', { title: 'Corporate Radio Wireless - Nusanet Bandung' });
 });
 
 /* GET Corporate Radio Wireless Registration. */
 router.get('/corporate-wireless/registration/:package', function(req, res, next) {
-  res.render('register-corporate', { title: 'Registration - Nusanet Pekanbaru', selectpackage: req.params.package });
+  res.render('register-corporate', { title: 'Registration - Nusanet Bandung', selectpackage: req.params.package });
 });
 
 /* GET Corporate Fiber Optic. */
 router.get('/corporate-fiber-optic/registration/:package', function(req, res, next) {
-  res.render('register-corporate', { title: 'Registration - Nusanet Pekanbaru', selectpackage: req.params.package });
+  res.render('register-corporate', { title: 'Registration - Nusanet Bandung', selectpackage: req.params.package });
 });
 
 /* GET Corporate Fiber Optic. */
 router.get('/corporate-fiber-optic', function(req, res, next) {
-  res.render('corporate-fiber-optic', { title: 'Corporate Fiber Optic - Nusanet Pekanbaru' });
+  res.render('corporate-fiber-optic', { title: 'Corporate Fiber Optic - Nusanet Bandung' });
 });
 
 /* GET Corporate Fiber Optic. */
 router.get('/register-success', function(req, res, next) {
-  res.render('register-success', { title: 'Registration Success - Nusanet Pekanbaru', message : req.flash('result') });
+  res.render('register-success', { title: 'Registration Success - Nusanet Bandung', message : req.flash('result') });
 });
 
 
@@ -168,7 +168,7 @@ router.post('/broadband-fiber-optic/registration/:selectpackage', function(req, 
   //console.log(req.body.fullname)
   //if(errors){
     //res.render('register-broadband-fiber-optic2', {
-     // title:'Registration - Nusanet Pekanbaru',
+     // title:'Registration - Nusanet Bandung',
      // errors:errors,
      // selectpackage: req.params.selectpackage
    // });
@@ -298,7 +298,7 @@ router.post('/subscribe/add', function(req, res){
   
   if(errors){
     res.render('index', {
-      title:'Nusanet Pekanbaru',
+      title:'Nusanet Bandung',
       errors:errors
     });
   } else {
